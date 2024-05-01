@@ -118,7 +118,7 @@ dunce = "1.0.2"
 winres = "0.1.12"
 
 [dev-dependencies]
-mockall = "0.11"
+mockall = "0.12"
 tempfile = "3.2.0"
 
 [profile.release]
