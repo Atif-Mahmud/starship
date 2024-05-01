@@ -41,6 +41,8 @@ pub const ALL_MODULES: &[&str] = &[
     "git_state",
     "git_status",
     "golang",
+    "gradient",
+    "gradient_username",
     "haskell",
     "helm",
     "hg_branch",

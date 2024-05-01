@@ -7,10 +7,10 @@ use unicode_segmentation::UnicodeSegmentation;
 #[derive(Clone)]
 pub struct TextSegment {
     /// The segment's style. If None, will inherit the style of the module containing it.
-    style: Option<Style>,
+    pub style: Option<Style>,
 
     /// The string value of the current segment.
-    value: String,
+    pub value: String,
 }
 
 impl TextSegment {
@@ -27,10 +27,10 @@ impl TextSegment {
 #[derive(Clone)]
 pub struct FillSegment {
     /// The segment's style. If None, will inherit the style of the module containing it.
-    style: Option<Style>,
+    pub style: Option<Style>,
 
     /// The string value of the current segment.
-    value: String,
+    pub value: String,
 }
 
 impl FillSegment {
