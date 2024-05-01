@@ -228,7 +228,7 @@ jobs:
           args: --dbg-build -v --nocapture -I install/windows/main.wxs
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         if: github.repository == 'starship/starship'
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
