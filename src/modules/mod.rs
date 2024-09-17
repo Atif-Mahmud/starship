@@ -35,6 +35,8 @@ mod git_state;
 mod git_status;
 mod gleam;
 mod golang;
+mod gradient;
+mod gradient_username;
 mod gradle;
 mod guix_shell;
 mod haskell;
@@ -147,6 +149,8 @@ pub fn handle<'a>(module: &str, context: &'a Context) -> Option<Module<'a>> {
             "git_status" => git_status::module(context),
             "gleam" => gleam::module(context),
             "golang" => golang::module(context),
+            "gradient" => gradient::module(context),
+            "gradient_username" => gradient_username::module(context),
             "gradle" => gradle::module(context),
             "guix_shell" => guix_shell::module(context),
             "haskell" => haskell::module(context),
@@ -270,6 +274,8 @@ pub fn description(module: &str) -> &'static str {
         "git_status" => "Symbol representing the state of the repo",
         "gleam" => "The currently installed version of Gleam",
         "golang" => "The currently installed version of Golang",
+        "gradient" => "Dynamically sizing gradient",
+        "gradient_username" => "Dynamically sizing gradient username",
         "gradle" => "The currently installed version of Gradle",
         "guix_shell" => "The guix-shell environment",
         "haskell" => "The selected version of the Haskell toolchain",

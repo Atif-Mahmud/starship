@@ -94,6 +94,7 @@ process_control = { version = "4.2.2", features = ["crossbeam-channel"] }
 guess_host_triple = "0.1.4"
 home = "0.5.9"
 shell-words = "1.1.0"
+colorgrad = "0.6.1"
 
 [dependencies.schemars]
 version = "0.8.21"
